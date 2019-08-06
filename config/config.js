@@ -78,13 +78,13 @@ export default {
   theme: {
     'primary-color': primaryColor,
   },
-  proxy: {
-    '/server/api/': {
-      target: 'http://192.168.10.122:88/',
-      changeOrigin: true,
-      pathRewrite: { '^/server': '' },
-    },
-  },
+  // proxy: {
+  //   '/server/api/': {
+  //     target: 'http://192.168.10.122:88/',
+  //     changeOrigin: true,
+  //     pathRewrite: { '^/server': '' },
+  //   },
+  // },
   ignoreMomentLocale: true,
   lessLoaderOptions: {
     javascriptEnabled: true,
@@ -113,7 +113,7 @@ export default {
     },
   },
   manifest: {
-    basePath: './',
+    basePath: '/',
   },
 
   chainWebpack: webpackPlugin,

@@ -26,6 +26,18 @@ export default [
       // dashboard
       { path: '/', redirect: '/dashboard/analysis', authority: ['admin', 'user'] },
       {
+        path: '/metadataManage',
+        name: 'metadataManage',
+        icon: 'dashboard',
+        routes: [
+          {
+            path: '/metadataManage/quickRegister',
+            name: 'quickRegister',
+            component: './MetadataManage/QuickRegister',
+          },
+        ],
+      },
+      {
         path: '/dashboard',
         name: 'dashboard',
         icon: 'dashboard',
